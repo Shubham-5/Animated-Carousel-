@@ -1,0 +1,117 @@
+/* .App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #09a960;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.slider-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.slide {
+    border-radius: 5px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+}
+
+.left {
+    position: absolute;
+    left: -8%;
+    top: 40%;
+}
+
+.right {
+    position: absolute;
+    right: -10%;
+    top: 40%;
+}
+
+
+/* position of indicator container */
+
+.Indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.Indicator-container {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.Indicator {
+    width: 10px;
+    height: 10px;
+    background: #fcfcfc;
+    border-radius: 50%;
+    position: relative;
+}
+
+.Indicator-highlight {
+    top: -2px;
+    left: -2px;
+    background: #09f;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    .slider-container {
+        height: 200px;
+        width: 200px;
+        left: 10%;
+    }
+    .left {
+        top: 30%;
+    }
+    .right {
+        top: 30%;
+    }
+}
+
+
+/* @media only screen and (max-width: 400px) {
+    .slider-container {
+        height: 40vh;
+        width: 70vw;
+    }
+} */
